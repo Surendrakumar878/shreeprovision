@@ -1,10 +1,10 @@
 const express=require("express")
-const UserModel=require("../models/user.model")
+const UserModel=require("../models/User.model")
 const userRouter=express.Router()
 const bcrypt = require('bcrypt');
 require("dotenv").config()
 const jwt = require('jsonwebtoken');
-userRouter.get("/user",async (req,res)=>{
+userRouter.get("/",async (req,res)=>{
     const user=await UserModel.find()
     res.send({"user":user})
 })
