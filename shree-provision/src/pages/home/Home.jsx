@@ -1,37 +1,23 @@
 import { Flex, Grid, GridItem } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
+import Landing from '../../components/landing_page/Landing'
+import Fruteveg from '../../components/products/fruteveg'
 
 const Home = () => {
+  const[landingData, setLandingData]=useState([{ id:1,image:'https://www.bigbasket.com/media/uploads/banner_images/YXHP144_hp_fom_m_bbpl-staples_460_050223_Bangalore.jpg'},
+  { id:1,image:'https://www.bigbasket.com/media/uploads/banner_images/YXHP144_hp_fom_m_bbpl-staples_460_050223_Bangalore.jpg'},
+  { id:1,image:'https://www.bigbasket.com/media/uploads/banner_images/YXHP144_hp_fom_m_bbpl-staples_460_050223_Bangalore.jpg'}])
+
+  
+
   return (
 
         <>
-        
+         <Landing obj_data={landingData} />
+      {/* <Fruteveg obj_data={data}/> */}
         </>
 
-//     <Grid
-//   templateAreas={`"header header"
-//                   "nav main"
-//                   "nav footer"`}
-//   gridTemplateRows={'50px 1fr 30px'}
-//   gridTemplateColumns={'150px 1fr'}
-//   h='200px'
-//   gap='1'
-//   color='blackAlpha.700'
-//   fontWeight='bold'
-// >
-//   <GridItem pl='2' bg='orange.300' area={'header'}>
-//     Header
-//   </GridItem>
-//   <GridItem pl='2' bg='pink.300' area={'nav'}>
-//     Nav
-//   </GridItem>
-//   <GridItem pl='2' bg='green.300' area={'main'}>
-//     Main
-//   </GridItem>
-//   <GridItem pl='2' bg='blue.300' area={'footer'}>
-//     Footer
-//   </GridItem>
-// </Grid>
+
 
   )
 }

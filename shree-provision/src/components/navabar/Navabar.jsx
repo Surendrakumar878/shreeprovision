@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { Flex, Box, Text, Image, Input } from '@chakra-ui/react'
+import { Flex, Box, Text, Image, Input, Button } from '@chakra-ui/react'
 import { FaCaretDown, FaIdCard, FaSearch } from "react-icons/fa" 
+import { Link } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 // import { FaCaretDown } from 'react-icons/fa'
 
@@ -14,9 +15,15 @@ const Navabar = () => {
         <Image w="15%" src="shreelogo.png"/>
         <Flex gap={'35px'} alignItems="center" >
           <Input w="100%" placeholder='Search'/>
-          <Text>Home</Text>
-          <Text>Products</Text>
-          <Text>Signup/Login</Text>
+          <Link to="/">
+           <Text>Home</Text>
+          
+          </Link>
+          <Link to="/product" > <Text>Products</Text></Link>
+         <Link  to="/login" >
+
+         <Button>Signup/Login</Button>
+         </Link> 
           <Text>Cart</Text>
         </Flex>
       </Box>

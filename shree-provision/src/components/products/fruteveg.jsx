@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Flex, Text, Image } from "@chakra-ui/react";
 
-function Fruteveg({ obj_data }) {
-    console.log(obj_data);
+function Fruteveg( ) {
+  const[data,setData]=useState([{ id:1, img:"https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+  name:"Onion",
+  price:"Rs 25",
+  btn:"Add to cart"
+  },
+  { id:2, img:"https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+  name:"Onion",
+  price:"Rs 25",
+  btn:"Add to cart"
+  },
+  { id:3, img:"https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+  name:"Onion",
+  price:"Rs 25",
+  btn:"Add to cart"
+  },
+  { id:4, img:"https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+  name:"Onion",
+  price:"Rs 25",
+  btn:"Add to cart"
+  },
+  { id:5, img:"https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+  name:"Onion",
+  price:"Rs 25",
+  btn:"Add to cart"
+  },
+  ])
     return (
         <div>
             <Text fontSize={"25px"} textAlign="center" >Products</Text>
             <Flex w="95%" justifyContent={'space-between'} m='auto' gap="10px" border="1px solid teal" flexWrap={'wrap'}  >
-                {obj_data.map((cart) => (
+                {data.map((cart) => (
                     <Box key={cart.id} border="1px solid red" w="24%" h="250px" display="flex" flexDirection={'column'} alignItems="center">
 
                         <Image src={cart.img} />
