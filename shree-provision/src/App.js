@@ -1,9 +1,11 @@
+
 import Routes from "./routes/Routes";
 import Navabar from "./components/navabar/Navabar";
 import Footer from "./components/footer/Footer";
 import Landing from "./components/landing_page/Landing";
 import Fruteveg from "./components/products/fruteveg";
 import { useState } from "react";
+
 
 function App() {
   const[landingData, setLandingData]=useState([{ id:1,image:'https://www.bigbasket.com/media/uploads/banner_images/YXHP144_hp_fom_m_bbpl-staples_460_050223_Bangalore.jpg'},
@@ -39,11 +41,13 @@ function App() {
 
   return (
     <div >
+
       <Routes/>
       <Navabar />
       <Landing obj_data={landingData} />
       <Fruteveg obj_data={data}/>
       <Footer />
+
     </div>
   );
 }

@@ -1,12 +1,15 @@
 import React from 'react'
+
 import { Flex, Box, Text, Image, Input } from '@chakra-ui/react'
 import { FaCaretDown, FaIdCard, FaSearch } from "react-icons/fa" 
 // import { Link } from 'react-router-dom'
 // import { FaCaretDown } from 'react-icons/fa'
 
+
 const Navabar = () => {
   return (
     <div>
+
       <Box pl="50px" pr="50px" display="flex" justifyContent={'Space-between'} alignItems="center">
         <Image w="15%" src="shreelogo.png"/>
         <Flex gap={'35px'} alignItems="center" >
@@ -30,6 +33,7 @@ const Navabar = () => {
           </Box>
         </Box> */}
        
+
     </div>
   )
 }

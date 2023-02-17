@@ -1,8 +1,9 @@
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Flex, Grid, GridItem } from '@chakra-ui/react'
 import React from 'react'
 
 const Home = () => {
   return (
+
         <>
         
         </>
@@ -31,6 +32,7 @@ const Home = () => {
 //     Footer
 //   </GridItem>
 // </Grid>
+
   )
 }
 
