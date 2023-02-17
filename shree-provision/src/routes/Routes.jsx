@@ -5,8 +5,7 @@ import Home from '../pages/home/Home';
 
 const mainRoutes = () => {
   return (
-    <Routes>
-
+    <Routes>  
        <Route path="/" element={ <Home/>}> </Route>
        <Route path="/signup" element={ "jhdfsdjf"}>   </Route>
        <Route path="/login" element={ "jhdfsdjf"}>    </Route>
